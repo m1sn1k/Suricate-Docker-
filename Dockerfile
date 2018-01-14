@@ -17,5 +17,3 @@ COPY /docker-entrypoint1.sh /
 RUN ["chmod", "755", "/docker-entrypoint1.sh"]
 
 VOLUME /var/log/suricata
-
-#ENTRYPOINT ["/docker-entrypoint1.sh &"]
