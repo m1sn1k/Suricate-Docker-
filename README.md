@@ -18,6 +18,10 @@ docker run --net=host -v /var/log/suricata:/var/log/suricata -it suricata_f  bas
 
 2. Start docker and script:
 
+cd /etc/suricata && wget https://rules.emergingthreats.net/open/suricata/emerging.rules.tar.gz && tar xzvf emerging.rules.tar.gz 
+
 docker run --net=host -v /var/log/suricata:/var/log/suricata -t -d --name suricata_f suricata_f
 
 docker exec suricata_f /docker-entrypoint1.sh
+
+
