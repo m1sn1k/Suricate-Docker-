@@ -13,6 +13,7 @@ RUN echo 'alert icmp any any -> $HOME_NET any (msg:"PING ATTACK"; sid:10000001; 
 RUN chmod 755 /var/log/suricata
 
 COPY /docker-entrypoint1.sh /
+COPY /suricata.yaml /etc/suricata
 
 RUN ["chmod", "755", "/docker-entrypoint1.sh"]
 
