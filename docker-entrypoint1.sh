@@ -1,2 +1,2 @@
 #! /bin/sh
-exec /usr/bin/suricata -c /etc/suricata/suricata.yaml -i eth0 --init-errors-fatal &
+exec /usr/bin/suricata -c /etc/suricata/suricata.yaml -i enp0s5 --init-errors-fatal &
